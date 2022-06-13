@@ -1,0 +1,89 @@
+.navbar{
+    height: 55px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: black;
+}
+.nav_logo{
+    height: 48px;
+    width: 160px;
+    object-fit: cover;
+    margin-left: 20px;
+}
+.nav_right{
+    display: flex;
+}
+.nav_info{
+    margin-right: 1rem;
+    color: white;
+}
+.buttons{
+    margin-right: 2rem;
+}
+.btn{
+    width: 100px;
+    height: 30px;
+    margin-right: 10px;
+    border-radius: 3px;
+    color: white;
+}
+.join_now{
+    width: 130px;
+    vertical-align: middle; 
+    text-align: center;   
+    background-color: red;
+    /* transition: all ease 0.1s; */
+    font-size: 14px;
+}
+.join_now:hover{
+    color: white;
+    background-color: rgb(255, 46, 46);
+}
+.sign_in{
+    border: 1px solid rgb(80, 79, 79);
+    background-color: black;
+}
+.sign_in:hover{
+    background-color: rgb(43, 42, 42);
+    color: white;
+
+}
+
+@media screen and (max-width: 788px) {
+    .nav_info{
+        font-size: 10px;
+        /* display: none; */
+    }
+}
+@media screen and (max-width: 728px) {
+    .nav_info{
+        font-size: 10px;
+        display: none;
+    }
+    .buttons{
+        margin-right: 0rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .join_now{
+        width: 100px;
+    }
+    .sign_in{
+        width: 90px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .join_now{
+        width: 90px;
+        font-size: 12px;
+    }
+    .sign_in{
+        font-size: 12px;
+        width: 75px;
+    }
+    .nav_logo{
+        margin-left: 5px;
+    }
+}
